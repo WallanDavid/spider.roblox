@@ -1,0 +1,73 @@
+# Instruções para criar o lugar Spider Game no Roblox Studio
+
+## Passos para criar o jogo:
+
+1. Abra o Roblox Studio
+2. Crie um novo lugar (New Place)
+3. Vá para a aba "View" e selecione "Explorer"
+4. No Explorer, clique com botão direito em "ServerScriptService"
+5. Selecione "Insert Object" > "Script"
+6. Renomeie o script para "init"
+7. Cole o conteúdo do arquivo "Scripts/init.lua"
+
+## Estrutura de pastas no Roblox Studio:
+
+```
+ServerScriptService/
+├── init (Script)
+└── Scripts (Folder)
+    ├── GameManager (Script)
+    ├── SpiderController (Script)
+    ├── PlayerController (Script)
+    └── Config (Script)
+```
+
+## Como organizar os scripts:
+
+1. Crie uma pasta chamada "Scripts" dentro de ServerScriptService
+2. Crie 4 scripts dentro desta pasta:
+   - GameManager
+   - SpiderController  
+   - PlayerController
+   - Config
+3. Cole o conteúdo de cada arquivo correspondente
+
+## Testando o jogo:
+
+1. Clique em "Play" no Roblox Studio
+2. O jogo deve criar automaticamente:
+   - Uma ilha com vegetação
+   - Uma casa abandonada
+   - Interface do jogador
+   - A aranha aparecerá após 30 segundos
+
+## Características do jogo:
+
+- Ilha atmosférica com iluminação noturna
+- Casa abandonada detalhada
+- Sistema de IA para a aranha
+- Interface do jogador com barra de saúde
+- Sistema de combate básico
+- Efeitos visuais e sonoros
+
+## Personalização:
+
+Edite o arquivo "Config.lua" para ajustar:
+- Velocidade da aranha
+- Dano causado
+- Tempo de chegada da aranha
+- Configurações do mundo
+- Cores e efeitos
+
+## Exportando:
+
+1. Vá em "File" > "Save to Roblox As..."
+2. Escolha um nome para o lugar
+3. O arquivo .rbxl será criado e pode ser compartilhado
+
+## Notas importantes:
+
+- Todos os scripts usam Luau (versão moderna do Lua)
+- O jogo é otimizado para performance
+- Código limpo e bem documentado
+- Fácil de expandir e modificar 
