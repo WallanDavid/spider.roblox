@@ -1,0 +1,33 @@
+# Roblox Studio files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Roblox Studio cache
+RobloxStudioLogs/
+RobloxStudioCrashLogs/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.backup 
