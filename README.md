@@ -1,46 +1,94 @@
 # 🕷️ Spider Game Demo - Roblox
 
-[![Roblox](https://img.shields.io/badge/Roblox-00A2FF?style=for-the-badge&logo=roblox&logoColor=white)](https://www.roblox.com/)
-[![Luau](https://img.shields.io/badge/Luau-000000?style=for-the-badge&logo=lua&logoColor=white)](https://luau-lang.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WallanDavid/spider.roblox)
+Roblox Luau GitHub
 
 ## 📖 Descrição
+
 Demonstração completa do jogo Spider para Roblox, criada como teste técnico para o cliente Marcelo R. Este projeto demonstra habilidades avançadas em desenvolvimento de jogos para a plataforma Roblox usando Luau.
 
+**🎯 VERSÃO CORRIGIDA - Sistema de Armas e IA Melhorada**
+
 ## ✨ Características
-- 🏝️ **Ilha atmosférica** com vegetação e iluminação noturna
-- 🏠 **Casa abandonada** detalhada com porta, janelas e telhado
-- 🕷️ **Sistema de IA** para a aranha que persegue o jogador
-- ⏰ **Chegada dramática** da aranha após 30 segundos
-- 🎮 **Interface completa** com barra de saúde e instruções
-- ⚔️ **Sistema de combate** funcional
-- 🎨 **Efeitos visuais** e atmosfera imersiva
-- 🚀 **Performance otimizada** para diferentes dispositivos
+
+* 🏝️ **Ilha atmosférica** com vegetação e iluminação de tarde
+* 🏠 **Casa abandonada** detalhada com porta, janelas e telhado
+* 🕷️ **Sistema de IA avançado** - aranhas perseguem ativamente o jogador
+* 🔫 **Sistema de armas completo** - Pistola, Rifle e Shotgun
+* 📦 **Inventário de armas** com interface visual
+* ⏰ **Chegada dramática** das aranhas após 10 segundos
+* 🎮 **Interface completa** com barra de saúde e contador de aranhas
+* ⚔️ **Sistema de combate** com projéteis visuais
+* ❤️ **Barras de vida** das aranhas em tempo real
+* ⚡ **Sistema de power-ups** - Speed, Health, Damage, Shield
+* 🎨 **Efeitos visuais** e atmosfera imersiva
+* 🚀 **Performance otimizada** para diferentes dispositivos
 
 ## 🚀 Instalação Rápida
 
 ### Pré-requisitos
-- [Roblox Studio](https://www.roblox.com/create) instalado
+
+* Roblox Studio instalado
 
 ### Passos
+
 1. Clone este repositório:
+
 ```bash
 git clone https://github.com/WallanDavid/spider.roblox.git
 ```
 
-2. Abra o Roblox Studio e crie um novo lugar
-3. Siga as instruções em [`INSTALACAO_RAPIDA.md`](INSTALACAO_RAPIDA.md)
-4. Cole os scripts nas pastas corretas
+2. Abra o Roblox Studio e crie um novo lugar (Baseplate)
+3. No ServerScriptService, crie um novo Script
+4. Cole o conteúdo do arquivo `spider_game_final.lua`
 5. Clique em **Play** para testar!
 
+## 🎮 Como Jogar
+
+### Controles
+* **WASD** - Mover o personagem
+* **1** - Selecionar Pistola (Dano: 25, Alcance: 20)
+* **2** - Selecionar Rifle (Dano: 40, Alcance: 30)
+* **3** - Selecionar Shotgun (Dano: 60, Alcance: 10)
+* **Clique** - Atirar na direção do mouse
+
+### Objetivo
+1. **Explore a ilha** - Use WASD para mover
+2. **Visite a casa** - Casa abandonada no centro da ilha
+3. **Aguarde as aranhas** - Aparecerão após 10 segundos
+4. **Troque armas** - Use 1, 2, 3 para selecionar
+5. **Atire nas aranhas** - Clique para atacar
+6. **Colete power-ups** - Para vantagens temporárias
+7. **Sobreviva** - Derrote todas as aranhas para vencer
+
+## 🔫 Sistema de Armas
+
+| Arma | Tecla | Dano | Alcance | Cooldown | Cor |
+|------|-------|------|---------|----------|-----|
+| Pistola | 1 | 25 | 20 | 0.6s | Azul |
+| Rifle | 2 | 40 | 30 | 1.0s | Vermelho |
+| Shotgun | 3 | 60 | 10 | 1.5s | Amarelo |
+
+## ⚡ Power-ups
+
+* **SpeedBoost** (Azul) - Aumenta velocidade por 10 segundos
+* **HealthPack** (Verde) - Restaura 25 de saúde
+* **DamageBoost** (Vermelho) - Aumenta dano das armas por 15 segundos
+* **Shield** (Amarelo) - Escudo protetor temporário
+* **WeaponCrate** (Violeta) - Arma especial
+
 ## 📁 Estrutura do Projeto
+
 ```
 spider.roblox/
 ├── 📄 README.md                 # Documentação principal
 ├── 📄 DEMONSTRACAO.md           # Guia detalhado da demonstração
 ├── 📄 INSTALACAO_RAPIDA.md      # Instruções de instalação
-├── 📄 build_place.rbxl          # Instruções para Roblox Studio
-├── 📁 Scripts/                  # Scripts principais do jogo
+├── 📄 spider_game_final.lua     # Script principal corrigido
+├── 📄 spider_game_simples.lua   # Versão simplificada
+├── 📄 setup_spider_game.lua     # Script de configuração automática
+├── 📄 gerar_rbxl_simples.lua    # Gerador de arquivo .rbxl
+├── 📄 COMO_USAR.md              # Instruções de uso
+├── 📁 Scripts/                  # Scripts modulares (versão anterior)
 │   ├── 🚀 init.lua              # Script de inicialização
 │   ├── 🎮 GameManager.lua       # Sistema principal do jogo
 │   ├── 🕷️ SpiderController.lua  # IA da aranha
@@ -49,38 +97,50 @@ spider.roblox/
 └── 📄 .gitignore               # Arquivos ignorados pelo Git
 ```
 
-## 🎮 Como Jogar
-
-1. **Explore a ilha** - Use WASD para mover
-2. **Visite a casa** - Casa abandonada no centro da ilha
-3. **Aguarde a aranha** - Aparecerá após 30 segundos
-4. **Fuja ou lute** - Clique para atacar a aranha
-5. **Sobreviva** - Mantenha sua saúde acima de zero
-
 ## 🔧 Personalização
 
-Edite o arquivo `Scripts/Config.lua` para ajustar:
-- ⏱️ Tempo de chegada da aranha
-- 🏃 Velocidade da aranha
-- ⚔️ Dano causado
-- 🎨 Cores e efeitos
-- 🌍 Configurações do mundo
+Edite as variáveis no início do `spider_game_final.lua` para ajustar:
+
+```lua
+local SPIDER_SPEED = 12          -- Velocidade da aranha
+local SPIDER_HEALTH = 100        -- Saúde da aranha
+local PLAYER_HEALTH = 100        -- Saúde do jogador
+local SPIDER_ARRIVAL_TIME = 10   -- Tempo para aranhas chegarem
+local MAX_SPIDERS = 2            -- Número de aranhas
+local POWERUP_SPAWN_TIME = 8     -- Frequência de power-ups
+```
+
+## 🆕 Novidades da Versão Corrigida
+
+### ✅ Correções Implementadas
+- **Aranhas perseguem corretamente** - IA melhorada com movimento real
+- **Sistema de armas funcional** - Troca com teclas 1, 2, 3
+- **Barras de vida das aranhas** - Visíveis e atualizadas em tempo real
+- **Iluminação de tarde** - Cenário mais claro e visível
+- **Projéteis visuais** - Efeitos coloridos para cada arma
+- **Interface melhorada** - Contador de aranhas e inventário
+
+### 🎯 Melhorias de Gameplay
+- **Combate mais dinâmico** - Múltiplas armas com características únicas
+- **Power-ups estratégicos** - Vantagens temporárias para sobrevivência
+- **Feedback visual** - Efeitos de dano e coleta
+- **Balanceamento** - Dano e cooldowns equilibrados
 
 ## 📊 Tecnologias Utilizadas
 
-- **Luau** - Linguagem de programação moderna do Roblox
-- **Roblox Studio** - IDE oficial para desenvolvimento
-- **Git** - Controle de versão
-- **GitHub** - Hospedagem do código
+* **Luau** - Linguagem de programação moderna do Roblox
+* **Roblox Studio** - IDE oficial para desenvolvimento
+* **Git** - Controle de versão
+* **GitHub** - Hospedagem do código
 
 ## 👨‍💻 Desenvolvido por
 
 **Wallan Peixoto** - Freelancer especializado em Roblox
 
-- 🎮 Experiência em desenvolvimento de jogos
-- 🕷️ Especialista em sistemas de IA
-- 🎨 Foco em experiência do usuário
-- 🚀 Código limpo e otimizado
+* 🎮 Experiência em desenvolvimento de jogos
+* 🕷️ Especialista em sistemas de IA
+* 🎨 Foco em experiência do usuário
+* 🚀 Código limpo e otimizado
 
 ## 📄 Licença
 
@@ -92,4 +152,11 @@ Este é um projeto de demonstração. Para dúvidas ou suporte, entre em contato
 
 ---
 
-⭐ **Se este projeto te ajudou, considere dar uma estrela no repositório!** 
+⭐ **Se este projeto te ajudou, considere dar uma estrela no repositório!**
+
+## 🎯 Status do Projeto
+
+- ✅ **Versão Básica** - Funcional
+- ✅ **Versão Dinâmica** - Com power-ups e múltiplas aranhas
+- ✅ **Versão com Armas** - Sistema de combate completo
+- ✅ **Versão Corrigida** - IA, armas e interface funcionais 
